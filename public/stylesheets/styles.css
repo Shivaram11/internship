@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+}
+
+.entry {
+    margin: 20px auto;
+    width: 70%;
+
+}
+
+.heading {
+    /* text-align: center; */
+    padding: 12px;
+    background-color: #46aa93;
+    color: white;
+    text-transform: capitalize;
+}
+
+.body {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #b4f2e1;
+    /* color:white; */
+
+
+
+}
+
+.footer {
+    padding: 20px;
+    position: relative;
+    background-color: #4a3f35;
+    color: white;
+    font-size: 2rem;
+}
+
+.icon {
+    color: black;
+    display: flex;
+    justify-content: end;
+    padding: 8px;
+    
+
+}
+
+.icon i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icon i:hover {
+    color: blue;
+}
+
+a button{
+    border: none;
+    background-color:aquamarine;
+    padding: 20px;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 80px;
+    right:50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+}
+a button:hover{
+    box-shadow:2px 2px  10px black;
+
+}
+
+
+.form-container{
+   margin-top: 100px;
+
+}
+.edit-title,
+.edit-content,
+.button,.file {
+    text-align: center;
+   width:50%;
+    margin: 20px auto;
+}
+.edit-title input,
+.edit-content textarea  {
+    border: 2px solid limegreen;
+    padding: 10px;
+
+}
+.button button{
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: aquamarine;
+    color:black;
+    border-radius: 10px;
+        transition: all 0.2s ease-in;
+
+
+}
+.button button:hover{
+    transform: scale(1.1);
+
+
+}
+.heading-title{
+    
+    text-align: center;
+    margin:20px auto ;
+}

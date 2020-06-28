@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e034c117a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+    <% snapshot.forEach(doc=>{%>
+    <div class="entry">
+        <div class="heading">
+            <h1> <%=doc.data().title%></h1>
+        </div>
+        <div class="body">
+            <p> <%=doc.data().content%> </p>
+        </div>
+     
+        <div class="icon">
+            <a href="/posts/<%=doc.id%>/edit"><i class="far fa-edit"></i></a>
+            <form action="/posts/<%=doc.id%>/delete" method="POST">
+            <button>
+                <i class="fas fa-trash-alt"></i>
+            </button>
+
+            </form>
+        
+                            
+            
+        </div>
+
+    </div>
+    <% })%>
+
+   <a href="/new">
+       <button>
+            +
+        </button>
+</a> 
+       
+</body>
+</html>
+

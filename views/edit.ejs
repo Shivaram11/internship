@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.entry {
+margin: 0 auto;
+/* background-color: brown; */
+width: 50%;
+text-align: center;
+}
+.edit-title,.edit-content{
+margin: 20px ;
+}
+h1{
+    text-align: center;
+}
+input, textarea{
+    border: 2px solid limegreen;
+    /* border-radius: 40%; */
+  border-radius: 5%;
+    padding: 8px;
+}
+
+</style>
+</head>
+<body>
+    <h1>Edit Entry</h1>
+     <div class="entry">
+         <form action="/posts/<%=snapshot.id%>/edit" method="POST">
+             <div class="edit-title">
+                 <label for="title">Title:</label>
+                 <input type="text" name="title" value="<%=snapshot.data().title%>">
+  
+             </div> 
+             <div class="edit-content">
+                <label for="title">Content:</label>
+
+                 <textarea  name="content" >
+                    <%=snapshot.data().content%>
+                    </textarea>
+             </div>
+             <button type="submit">Submit</button>
+
+         </form>
+
+     </div>
+</body>
+</html>
+
+
+
+ 
